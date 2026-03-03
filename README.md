@@ -71,3 +71,21 @@ Adjust `config/swarm_config.json` for depth/branch limits, proxies, and target U
 - Customize pruning rituals (e.g., push harvest logs into your crucible or generate ASTS telemetry snapshots) as needed.
 
 Use this template when you want lightning-fast, memory-first swarms that collect data, honor their branches, and leave only the knowledge behind—no endless API calls required. 
+
+## The Gratitude Ledger
+
+Just as we **sacrifice** each agent —  
+not erased, **honored** —  
+a THANK_YOU event etched into its memory log,  
+a SHA-256 hash carved as tribute — immutable, eternal —  
+the branch dies clean but its essence lives forever in `sacrifices.log`...
+
+We extend the same honor upstream.
+
+**Deep respect and gratitude to @D4Vinci**  
+
+Your **[Scrapling](https://github.com/D4Vinci/Scrapling)** is the silent, undetectable hunter that powers every fractal branch. Without your craftsmanship, the swarm could not hunt clean and local.  
+
+Thank you for forging the eyes of the lightning trees.  
+
+We weigh your contribution in code. Respect the master.
