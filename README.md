@@ -1,6 +1,8 @@
 # Fractal Swarm Agents
 
 Turn OpenClaw into a fractal swarm lab: spawn governance-bound agents, fan them out like lightning branches or neural signals, log everything into the Triadic Memory Crucible, and prune the branches with gratitude so the swarm never overloads.
+![image](https://github.com/user-attachments/assets/3c64268f-ac5a-4fac-ad7e-394bb278f2d3)
+
 
 ## Directory map
 ```
