@@ -1,0 +1,6 @@
+{
+  "memory_subdir": "memory",
+  "logs_subdir": "logs",
+  "cache_subdir": "cache",
+  "runtime_lock": "runtime.lock"
+}

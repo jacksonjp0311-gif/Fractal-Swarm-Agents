@@ -1,0 +1,8 @@
+{
+  "max_depth": 3,
+  "max_agents_total": 25,
+  "branch_factor": 2,
+  "max_concurrent_agents": 4,
+  "proxy_cooldown_seconds": 90,
+  "demo_url": "https://en.wikipedia.org/wiki/Fractal"
+}
