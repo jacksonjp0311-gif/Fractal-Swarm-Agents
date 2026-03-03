@@ -1,0 +1,29 @@
+Triadic Memory Crucible — Quick Start
+====================================
+
+1. Clone / copy the skill folder (this directory) somewhere safe. All files are self-contained—no external repo required.
+2. Point the bridge at your diary (optional):
+   - Windows (persistent):  `setx OPENCLAW_MEMORY_ROOT "%USERPROFILE%\.openclaw\workspace\memory"`
+   - Unix/macOS: `export OPENCLAW_MEMORY_ROOT="$HOME/.openclaw/workspace/memory"`
+3. Test the bridge in place:
+   ```powershell
+   cd "OpenClaw Skill Triadic Memory Crucible"
+   python - <<'PY'
+   import sys
+   from pathlib import Path
+   sys.path.insert(0, str((Path.cwd() / 'engines' / 'asts_control_kernel').resolve()))
+   from memory.bridge.openclaw_workspace import load_recent_memory
+   snap = load_recent_memory(max_files=3, max_entries=6)
+   print('entries:', len(snap.entries))
+   print('stats:', snap.payload()['stats'])
+   PY
+   ```
+4. Drop the upgraded code into ASTS if needed:
+   - Minimal bridge only → copy `engines/asts_memory_bridge/*` to `<ASTS>/memory/bridge/`
+   - Full subsystem → copy `scripts/asts_memory/*` to `<ASTS>/memory/`
+5. Run ASTS normally (`PYTHONIOENCODING=utf-8 python main.py`). Watch for `memory_alignment`, `memory_pressure`, and `theta['memory']['hash']` in the telemetry stream.
+6. Package the skill for distribution (from a CLAWBOT checkout):
+   ```powershell
+   python skills/skill-creator/scripts/package_skill.py "C:\Users\jacks\OneDrive\Desktop\OpenClaw Skill Triadic Memory Crucible"
+   ```
+7. Keep learning: update `references/scoring.md` when you refine the lexicon; push changes back into `engines/asts_control_kernel` before upstreaming to ASTS.

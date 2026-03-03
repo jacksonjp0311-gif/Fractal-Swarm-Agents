@@ -1,0 +1,9 @@
+# Ignore local build artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore state/cache folders
+.gitnexus/
+state/
